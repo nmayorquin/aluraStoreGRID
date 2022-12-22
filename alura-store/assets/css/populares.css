@@ -1,0 +1,92 @@
+/*todoel contenido después de las imágenes que comienza con slak va en esta hoja de diseño*/
+.populares{
+    padding: 3rem 2em;
+
+}
+
+.populares__contenido{ 
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: contenido;
+    padding: 1rem 0rem;
+}
+
+
+.populares__card{
+    display: grid;
+    background: #fdfdfd;
+    grid-template-areas:
+    "card-imagen"
+    "card-base"; /*se definen las dos áreas definidas: imagen y contenido*/
+    grid-template-columns: 100%;
+    grid-template-rows: 173px auto;
+    margin-right: 1rem;
+    width:calc(20% - 1rem); /*siempre colocar los cálculos alejados del signo de operación o sino no la realiza*/
+}
+
+/*ESTILOS PARA ZONA DE IMAGEN*/
+.populares__card___imagen{
+    grid-area: card-imagen;
+    width: 100%;
+    height: 100%;
+}
+
+/*ESTILOS PARA BASE: incluye titulo, fecha y descripción*/
+.populares__card___base{ 
+    display: grid;
+    grid-area: card-base;
+    grid-row-gap: .5rem; /*espacio entre imagen y base*/
+    grid-template-areas:
+    "card-header"
+    "card-description";
+    grid-template-rows: 50px auto;
+    padding: .75rem;
+}
+
+/*ESTILOS PARA DESCRIPCION*/
+
+.populares__card___descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: card-description;
+    padding: 1rem 0rem;
+    color: #333333;
+    line-height: 1.5;
+    margin: 1rem 0;
+    text-align: justify;
+}   
+
+
+.populares__card___titulo{
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+.populares__card___data{
+    color: #808080;
+    font-size: 0.9rem;
+}
+
+.populares__titulo{
+    font-weight: 500;
+}
+ /*ESTILOS PARA ICONOS Y FOOTER*/
+
+ .populares__icon{
+    margin-right: .25rem;
+ }
+
+
+
+.populares__card___header{ /*caja ver todos*/ 
+    border-bottom: solid #dcdcdc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.populares__boton{
+    background: transparent;
+    border: none;
+    color: #333333
+}
+

@@ -1,0 +1,23 @@
+.app {
+    background: #f1f1f1;
+    display: grid; /*app es la clase de body, para comenzar con la práctica se define que toda la página tenga el estilo grid*/
+    /*GRID DEFINE AREAS DE TRABAJO CON LA SIGUIENTE PROPIEDAD por filas y columnas:*/
+    grid-template-areas: "encabezado"
+    "contenido"
+    "rodapie";
+    grid-template-columns: auto;
+    grid-template-rows: 50px 100vh auto; /*el primer valor es el tamaño del header, segundo main y tercero footer. vh le indica que ocupe todo el espcio del main*/
+
+}
+
+.encabezado {
+
+    grid-area: encabezado;
+}
+.contenido {
+    grid-area: contenido;
+}
+
+.rodapie { 
+    grid-area: rodapie;
+}
